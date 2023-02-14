@@ -6141,8 +6141,9 @@ PERFORMANCE OF THIS SOFTWARE.
             if (bgWrap) bgWrap.classList.toggle("_bg-active");
             if (bgBody) bgBody.classList.toggle("_body-active");
         }));
-        if (menuBody) menuBody.addEventListener("click", (function(e) {
-            menuBody.classList.remove("_menu-active");
+        const closeMenu = document.querySelector(".close-menu-btn");
+        if (closeMenu) closeMenu.addEventListener("click", (function(e) {
+            closeMenu.classList.remove("_menu-active");
             if (menuBurger) menuBurger.classList.remove("_icon-active");
             if (bgWrap) bgWrap.classList.remove("_bg-active");
             if (bgBody) bgBody.classList.remove("_body-active");
