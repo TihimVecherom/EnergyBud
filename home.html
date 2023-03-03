@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230214135021">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230303154859">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,28 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div id="fix" class="fix"></div>
+			<div id="popup" class="popup ">
+				<div class="popup__wrap">
+					<a class="popup__area-bg" href="#fix"></a>
+					<div class="popup__container">
+						<div class="popup__content ">
+							<a class="close-popup" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 11.7495C5.56844 11.7495 5.21875 11.3998 5.21875 10.9682V1.03198C5.21875 0.60042 5.56844 0.250732 6 0.250732C6.43156 0.250732 6.78125 0.60042 6.78125 1.03198V10.9682C6.78125 11.3998 6.43156 11.7495 6 11.7495Z" fill="#131C34" />
+									<path d="M10.9685 6.78125H1.03223C0.600664 6.78125 0.250977 6.43156 0.250977 6C0.250977 5.56844 0.600664 5.21875 1.03223 5.21875H10.9685C11.4 5.21875 11.7497 5.56844 11.7497 6C11.7497 6.43156 11.4 6.78125 10.9685 6.78125Z" fill="#131C34" />
+								</svg>
+							</a>
+							<h2 class="title">Бажаєте, щоб ми передзвонили?</h2>
+							<p class="text">Введіть ваш номер телефону і ми зателефонуємо за 30 секунд!</p>
+							<form class="form form-popup" action="#">
+								<input class="form__input" placeholder=Телефон>
+								<button class="form__button">Чекаю на дзвінок!</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="header__container">
 				<div class="header__content">
 					<div class="header__top">
@@ -42,7 +64,7 @@
 							</a>
 							<div class="header__block-soc-item">
 								<a class="header__link-tel" href="tel:+380950000000">+380950000000</a>
-								<a class="header__link-callback" href="#">Передзвонити вам?</a>
+								<a class="header__link-callback" href="#popup">Передзвонити вам?</a>
 							</div>
 
 						</div>
@@ -123,15 +145,23 @@
 								</li>
 								<li class="menu__item"><a href="home.html" class="menu__link page-active">Головна</a></li>
 								<li class="menu__item"><a href="delivery.html" class="menu__link">Доставка</a></li>
-								<li class="menu__item "><a href="delivery.html#pay" class="menu__link">Оплата</a></li>
+								<li class="menu__item close-menu-btn"><a href="delivery.html#pay" class="menu__link">Оплата</a></li>
 								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
 							</ul>
 						</nav>
+
+
+
 					</div>
 				</div>
 			</div>
+
+
+
 		</header>
 		<main class="page">
+
+
 
 			<div class="first">
 				<div class="first__container">
@@ -165,7 +195,7 @@
 			<div class="categories">
 				<div class="categories__container">
 					<div class="categories__cards">
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="50" class="categories__card card-categories">
 							<a href="categories.html"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">КСО 393 В (ВВ) </h3>
@@ -180,7 +210,7 @@
 								<img src="img/main/categories/1.png" alt="picture">
 							</div>
 						</div>
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="100" class="categories__card card-categories">
 							<a href="#"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">КТПММ</h3>
@@ -195,7 +225,7 @@
 								<img src="img/main/categories/1.png" alt="picture">
 							</div>
 						</div>
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="150" class="categories__card card-categories">
 							<a href="#"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">КТП</h3>
@@ -210,7 +240,7 @@
 								<img src="img/main/categories/1.png" alt="picture">
 							</div>
 						</div>
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="50" class="categories__card card-categories">
 							<a href="#"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">КТП1</h3>
@@ -225,7 +255,7 @@
 								<img src="img/main/categories/1.png" alt="picture">
 							</div>
 						</div>
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="100" class="categories__card card-categories">
 							<a href="#"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">ЯКНО</h3>
@@ -240,7 +270,7 @@
 								<img src="img/main/categories/1.png" alt="picture">
 							</div>
 						</div>
-						<div class="categories__card card-categories">
+						<div data-aos="fade-up" data-aos-delay="150" class="categories__card card-categories">
 							<a href="#"></a>
 							<div class="card-categories__content">
 								<h3 class="card-categories__title">ЯКНО-10</h3>
@@ -261,30 +291,30 @@
 
 			<div class="enterprise">
 				<div class="enterprise__container">
-					<div class="enterprise__content">
+					<div data-aos="fade-up" class="enterprise__content">
 						<h2 class="enterprise__title">
-							<span class="enterprise__title-icon">
+							<span data-aos="fade-right" class="enterprise__title-icon">
 								<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M15 16.5C15.8284 16.5 16.5 15.8284 16.5 15L16.5 1.5C16.5 0.671573 15.8284 -9.28991e-08 15 -5.79835e-08C14.1716 3.14107e-07 13.5 0.671573 13.5 1.5L13.5 13.5L1.5 13.5C0.671574 13.5 1.34009e-06 14.1716 1.03783e-06 15C1.07275e-06 15.8284 0.671574 16.5 1.5 16.5L15 16.5ZM0.93934 3.06066L13.9393 16.0607L16.0607 13.9393L3.06066 0.93934L0.93934 3.06066Z" fill="#5483F5" />
 								</svg>
 							</span>
-							<span class="enterprise__title-text">Про наше підприємство</span>
+							<span data-aos="fade-up" class="enterprise__title-text">Про наше підприємство</span>
 						</h2>
 						<div class="enterprise__block-text">
-							<ul class="enterprise__spoller-list">
+							<ul data-aos="fade-up" class="enterprise__spoller-list">
 								<li class="enterprise__spoller-title">ТОВ «ЕНЕРГОБУД-ПРОМ» засновано в 2011 році. Основними напрямками діяльності нашої компанії є:</li>
 								<li class="enterprise__spoller-text">виробництво електророзподільчого обладнання;</li>
 								<li class="enterprise__spoller-text">електромонтажні роботи;</li>
 								<li class="enterprise__spoller-text">пусконалагоджувальні роботи.</li>
 							</ul>
-							<ul class="enterprise__spoller-list">
+							<ul data-aos="fade-up" class="enterprise__spoller-list">
 								<li class="enterprise__spoller-title">Виробництво електротехнічного розподільчого обладнання:</li>
 								<li class="enterprise__spoller-text">Виготовлення високовольтних камер одностороннього обслуговування типу КСО-393 (згідно з опитувальним листом проекту або погодження замовником);</li>
 							</ul>
 						</div>
 						<div data-spollers class="enterprise__spoller">
 							<div class="enterprise__spoller-item">
-								<button type="button" data-spoller class="enterprise__spoller-button">
+								<button data-aos="fade-up" type="button" data-spoller class="enterprise__spoller-button">
 
 									<span class="enterprise__block-buttons">
 
@@ -346,36 +376,36 @@
 				</div>
 			</div>
 
-			<div class="why-are">
+			<div data-aos="fade-up" class="why-are">
 				<div class="why-are__container">
-					<h2 class="why-are__title">Чому ми?</h2>
+					<h2 data-aos="fade-up" class="why-are__title">Чому ми?</h2>
 					<div class="why-are__items">
-						<div class="why-are__item">
-							<div class="why-are__icon">
+						<div data-aos="fade-up" class="why-are__item">
+							<div data-aos="fade-right" class="why-are__icon">
 								<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z" fill="#5483F5" />
 								</svg>
 							</div>
 							<p class="why-are__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						</div>
-						<div class="why-are__item">
-							<div class="why-are__icon">
+						<div data-aos="fade-up" class="why-are__item">
+							<div data-aos="fade-right" class="why-are__icon">
 								<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z" fill="#5483F5" />
 								</svg>
 							</div>
 							<p class="why-are__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						</div>
-						<div class="why-are__item">
-							<div class="why-are__icon">
+						<div data-aos="fade-up" class="why-are__item">
+							<div data-aos="fade-right" class="why-are__icon">
 								<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z" fill="#5483F5" />
 								</svg>
 							</div>
 							<p class="why-are__item-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						</div>
-						<div class="why-are__item">
-							<div class="why-are__icon">
+						<div data-aos="fade-up" class="why-are__item">
+							<div data-aos="fade-right" class="why-are__icon">
 								<svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M16 0L19.5922 11.0557H31.2169L21.8123 17.8885L25.4046 28.9443L16 22.1115L6.59544 28.9443L10.1877 17.8885L0.783095 11.0557H12.4078L16 0Z" fill="#5483F5" />
 								</svg>
@@ -386,15 +416,15 @@
 				</div>
 			</div>
 
-			<div class="bid">
+			<div data-aos="fade-up" class="bid">
 				<div class="bid__container">
 					<div class="bid__content">
 						<div class="bid__block-text">
-							<h2 class="bid__title">Залишити заявку</h2>
-							<p class="bid__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+							<h2 data-aos="fade-up" class="bid__title">Залишити заявку</h2>
+							<p data-aos="fade-up" class="bid__text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 						</div>
 						<div class="bid__form">
-							<form class="form bid-form" action="#">
+							<form data-aos="fade-up" class="form bid-form" action="#">
 								<input class="form__input" type="text" placeholder="Ім’я">
 								<input class="form__input" type="text" placeholder="Телефон">
 								<p class="form__text">Відправляючи свої данні Ви погоджуєтесь з <a href="policy.html">Політикої конфіденційності</a></p>
@@ -410,12 +440,12 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
-					<div class="footer__logo">
+					<div data-aos="fade-up" data-aos-delay="50" class="footer__logo">
 						<a href="#"><img src="img/footer/logo-f.svg" alt="logo"></a>
 					</div>
 					<div class="footer__menu menu-footer">
 						<nav class="menu-footer__body">
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="100" class="menu-footer__list">
 								<li class="menu-footer__list-title">КАТАЛОГ:</li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">КСО-393 В(ВВ)</a></li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">КТПММ</a></li>
@@ -424,12 +454,12 @@
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">ЯКНО</a></li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">ЯКНО 10</a></li>
 							</ul>
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="150" class="menu-footer__list">
 								<li class="menu-footer__list-title">ІНФОРМАЦІЯ:</li>
 								<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Доставка і оплата</a></li>
 								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакти</a></li>
 							</ul>
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="200" class="menu-footer__list">
 								<li class="menu-footer__list-title">КОНТАКТИ:</li>
 								<li class="menu-footer__item">Директор</li>
 								<li class="menu-footer__item"><a href="tel:+380664666840" class="menu-footer__link">+38 066 466 68 40,</a></li>
@@ -494,7 +524,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230214135021"></script>
+	<script src="js/app.min.js?_v=20230303154859"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230214135021">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230303154859">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,28 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div id="fix" class="fix"></div>
+			<div id="popup" class="popup ">
+				<div class="popup__wrap">
+					<a class="popup__area-bg" href="#fix"></a>
+					<div class="popup__container">
+						<div class="popup__content ">
+							<a class="close-popup" href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 11.7495C5.56844 11.7495 5.21875 11.3998 5.21875 10.9682V1.03198C5.21875 0.60042 5.56844 0.250732 6 0.250732C6.43156 0.250732 6.78125 0.60042 6.78125 1.03198V10.9682C6.78125 11.3998 6.43156 11.7495 6 11.7495Z" fill="#131C34" />
+									<path d="M10.9685 6.78125H1.03223C0.600664 6.78125 0.250977 6.43156 0.250977 6C0.250977 5.56844 0.600664 5.21875 1.03223 5.21875H10.9685C11.4 5.21875 11.7497 5.56844 11.7497 6C11.7497 6.43156 11.4 6.78125 10.9685 6.78125Z" fill="#131C34" />
+								</svg>
+							</a>
+							<h2 class="title">Бажаєте, щоб ми передзвонили?</h2>
+							<p class="text">Введіть ваш номер телефону і ми зателефонуємо за 30 секунд!</p>
+							<form class="form form-popup" action="#">
+								<input class="form__input" placeholder=Телефон>
+								<button class="form__button">Чекаю на дзвінок!</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="header__container">
 				<div class="header__content">
 					<div class="header__top">
@@ -42,7 +64,7 @@
 							</a>
 							<div class="header__block-soc-item">
 								<a class="header__link-tel" href="tel:+380950000000">+380950000000</a>
-								<a class="header__link-callback" href="#">Передзвонити вам?</a>
+								<a class="header__link-callback" href="#popup">Передзвонити вам?</a>
 							</div>
 
 						</div>
@@ -121,15 +143,21 @@
 									</span>
 
 								</li>
-								<li class="menu__item"><a href="home.html" class="menu__link ">Головна</a></li>
+								<li class="menu__item"><a href="home.html" class="menu__link page-active">Головна</a></li>
 								<li class="menu__item"><a href="delivery.html" class="menu__link">Доставка</a></li>
-								<li class="menu__item "><a href="delivery.html#pay" class="menu__link">Оплата</a></li>
+								<li class="menu__item close-menu-btn"><a href="delivery.html#pay" class="menu__link">Оплата</a></li>
 								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
 							</ul>
 						</nav>
+
+
+
 					</div>
 				</div>
 			</div>
+
+
+
 		</header>
 		<main class="page">
 
@@ -146,9 +174,9 @@
 				<div class="category__container">
 
 					<div class="category__content">
-						<h2 class="category__title title">КСО 393 В (ВВ) - КАМЕРИ ЗБІРНІ ОДНОСТОРОННЬОГО ОБСЛУГОВУВАННЯ</h2>
+						<h2 data-aos="fade-up" data-aos-delay="50" class="category__title title">КСО 393 В (ВВ) - КАМЕРИ ЗБІРНІ ОДНОСТОРОННЬОГО ОБСЛУГОВУВАННЯ</h2>
 						<div class="category__cards cards">
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="50" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -168,7 +196,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="100" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -188,7 +216,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="150" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -208,7 +236,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="50" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -228,7 +256,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="100" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -248,7 +276,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="card">
+							<div data-aos="fade-up" data-aos-delay="150" class="card">
 								<div class="card__picture">
 									<img src="img/main/categories/category/1.png" alt="picture">
 								</div>
@@ -271,12 +299,12 @@
 						</div>
 					</div>
 
-					<div class="category__info">
-						<h2 class="title">КСО 393 В (ВВ) - КАМЕРИ ЗБІРНІ ОДНОСТОРОННЬОГО ОБСЛУГОВУВАННЯ</h2>
-						<p class="text">Камери збірні одностороннього обслуговування серії KCО-393 В (ВВ) — виробництво, продаж і в разі необхідності монтаж та налагодження від виробника. Камери одностороннього обслуговування серії КСО 393 В (ВВ) призначені для розподілу високовольтних електромереж 6 (10) кВ змінного струму з ізольованою нейтраллю. Камери одностороннього обслуговування серії КСО 393 В (ВВ) відповідають ТУ У 27.-37502840-001:2021.Камери КСО393 ВВ комплектуються вакуумними вимикачами типу ВВ-ТЕL, встановлюються електронні і (або) мікропроцесорні пристрої захисту (МТЗ, ТО, ЗНЗ та ін.). Камери КСО393 В комплектуються вимикачами навантаження типу ВН-10/630, роз’єднувачами типу РВЗ-10/630 і другим обладнанням згідно опитувального листа.Маса не більше 200 кг.</p>
+					<div data-aos="fade-up" class="category__info">
+						<h2 data-aos="fade-up" class="title">КСО 393 В (ВВ) - КАМЕРИ ЗБІРНІ ОДНОСТОРОННЬОГО ОБСЛУГОВУВАННЯ</h2>
+						<p data-aos="fade-up" class="text">Камери збірні одностороннього обслуговування серії KCО-393 В (ВВ) — виробництво, продаж і в разі необхідності монтаж та налагодження від виробника. Камери одностороннього обслуговування серії КСО 393 В (ВВ) призначені для розподілу високовольтних електромереж 6 (10) кВ змінного струму з ізольованою нейтраллю. Камери одностороннього обслуговування серії КСО 393 В (ВВ) відповідають ТУ У 27.-37502840-001:2021.Камери КСО393 ВВ комплектуються вакуумними вимикачами типу ВВ-ТЕL, встановлюються електронні і (або) мікропроцесорні пристрої захисту (МТЗ, ТО, ЗНЗ та ін.). Камери КСО393 В комплектуються вимикачами навантаження типу ВН-10/630, роз’єднувачами типу РВЗ-10/630 і другим обладнанням згідно опитувального листа.Маса не більше 200 кг.</p>
 					</div>
 
-					<div class="category__block-tabl">
+					<div data-aos="fade-up" class="category__block-tabl">
 						<table class="table">
 							<thead class="table__thead">
 								<tr>
@@ -315,38 +343,38 @@
 						</div>
 					</div>
 
-					<div class="category__swiper">
+					<div data-aos="fade-up" class="category__swiper">
 						<h2 class="title">Фотогалерея</h2>
 						<div class="swiper swiper-categories">
 							<div data-gallery class="swiper-wrapper swiper-categories__wrap">
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="50" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="100" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="150" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="200" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="250" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="200" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="150" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="100" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="50" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
-								<a href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
+								<a data-aos="fade-up" data-aos-delay="50" href="img/main/categories/swiper/1.png" class="swiper-slide swiper-categories__slide">
 									<img src="img/main/categories/swiper/1.png" alt="name-product">
 								</a>
 
@@ -378,12 +406,12 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
-					<div class="footer__logo">
+					<div data-aos="fade-up" data-aos-delay="50" class="footer__logo">
 						<a href="#"><img src="img/footer/logo-f.svg" alt="logo"></a>
 					</div>
 					<div class="footer__menu menu-footer">
 						<nav class="menu-footer__body">
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="100" class="menu-footer__list">
 								<li class="menu-footer__list-title">КАТАЛОГ:</li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">КСО-393 В(ВВ)</a></li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">КТПММ</a></li>
@@ -392,12 +420,12 @@
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">ЯКНО</a></li>
 								<li class="menu-footer__item"><a href="#" class="menu-footer__link">ЯКНО 10</a></li>
 							</ul>
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="150" class="menu-footer__list">
 								<li class="menu-footer__list-title">ІНФОРМАЦІЯ:</li>
 								<li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link">Доставка і оплата</a></li>
 								<li class="menu-footer__item"><a href="contacts.html" class="menu-footer__link">Контакти</a></li>
 							</ul>
-							<ul class="menu-footer__list">
+							<ul data-aos="fade-up" data-aos-delay="200" class="menu-footer__list">
 								<li class="menu-footer__list-title">КОНТАКТИ:</li>
 								<li class="menu-footer__item">Директор</li>
 								<li class="menu-footer__item"><a href="tel:+380664666840" class="menu-footer__link">+38 066 466 68 40,</a></li>
@@ -462,7 +490,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230214135021"></script>
+	<script src="js/app.min.js?_v=20230303154859"></script>
 </body>
 
 </html>
